@@ -1,16 +1,30 @@
-# laravel-jwt-api
+# Documentation
+## About
 
 Laravel 8 with JWT Authentication and Swagger for API development
 
-## Quick Start
+## Requirements
+    * PHP >= 7.4
+    * [Composer](https://github.com/composer/composer) 2.0.8
+    * [Laravel](https://github.com/laravel/framework) ^8.0
+    * [jwt-auth](https://github.com/tymondesigns/jwt-auth) ^1.0.2
+## Installation
 
-- Clone this repo or download it's release archive and extract it somewhere
-- You may delete .git folder if you get this code via git clone
-- Run composer install
-- Configure your .env file for authenticating via database
-- Run docker-compose build
-- Run docker-compose up -d
-- Run the following command to populate database tables.
+    - Clone this repo or download it's release archive and extract it somewhere
+    - Open cmd or terminal cd laravel-jwt-api and run below:
+
+        ```bash
+        $ docker-compose build
+        $ docker-compose up -d
+        ```
+    - cd src and configure your .env file for authenticating via database
+
+        ```bash
+            $ php artisan migrate
+            $ php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+            $ php artisan jwt:secret
+        ```
+    - cd ../ run the following command to populate database tables.
 
 	```bash
 	$ docker-compose exec --it php_laravel_jwt_api sh
@@ -36,7 +50,7 @@ Laravel 8 with JWT Authentication and Swagger for API development
         }
     }
 
-     ```
+    ```
      
      
 - ```POST /api/login``` –> with email and password, obtain a JWT token
