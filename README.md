@@ -23,7 +23,7 @@ Laravel 8 with JWT Authentication and Swagger for API development
 
     ```bash
 
-        $ php artisan migrate
+        $ composer update
         $ php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
         $ php artisan jwt:secret
 
