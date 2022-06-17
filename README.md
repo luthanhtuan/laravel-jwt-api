@@ -5,13 +5,14 @@ Laravel 8 with JWT Authentication and Swagger for API development
 
 ## Requirements
 * PHP >= 7.4
+* Docker 4.1.0
 * [Composer](https://github.com/composer/composer) 2.0.8
 * [Laravel](https://github.com/laravel/framework) ^8.0
 * [jwt-auth](https://github.com/tymondesigns/jwt-auth) ^1.0.2
 * [Swagger](https://github.com/DarkaOnLine/L5-Swagger) 8.3.2
 ## Installation
 
-- Clone this repo or download it's release archive and extract it somewhere
+- Clone this repo or download it
 - Open cmd or terminal cd laravel-jwt-api and run below:
 
     ```bash
