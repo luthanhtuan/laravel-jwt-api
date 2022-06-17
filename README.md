@@ -19,19 +19,15 @@ Laravel 8 with JWT Authentication and Swagger for API development
     $ docker-compose build
     $ docker-compose up -d
     ```
-- cd src and configure your .env file for authenticating via database
+- Configure your .env file for authenticating via database
 
     ```bash
+    $ docker exec -it php_laravel_jwt_api sh
     $ composer update
     $ php artisan jwt:secret
     $ php artisan l5-swagger:generate
+     $ php artisan migrate
     ```
-- cd ../ run the following command to populate database tables.
-
-	```bash
-    $ docker exec --it php_laravel_jwt_api sh
-    $ php artisan migrate
-	```
 
 - Visit `localhost`
 
