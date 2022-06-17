@@ -26,7 +26,7 @@ Laravel 8 with JWT Authentication and Swagger for API development
     $ composer update
     $ php artisan jwt:secret
     $ php artisan l5-swagger:generate
-     $ php artisan migrate
+    $ php artisan migrate
     ```
 
 - Visit `localhost`
