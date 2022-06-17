@@ -23,9 +23,7 @@ Laravel 8 with JWT Authentication and Swagger for API development
 
     ```bash
     $ composer update
-    $ php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
     $ php artisan jwt:secret
-    $ php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
     $ php artisan l5-swagger:generate
     ```
 - cd ../ run the following command to populate database tables.
