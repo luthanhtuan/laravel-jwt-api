@@ -24,6 +24,26 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
+
+    /**
+     * @OA\POST(
+     *     path="/api/login",
+     *     tags={"Authentication"},
+     *     summary="Login",
+     *     description="Login",
+     *     @OA\RequestBody(
+     *          @OA\JsonContent(
+     *              type="object",
+     *              @OA\Property(property="email", type="string", example="tuanlu@tlcmodular.com"),
+     *              @OA\Property(property="password", type="string", example="123456")
+     *          ),
+     *      ),
+     *      @OA\Response(response=200, description="Login" ),
+     *      @OA\Response(response=400, description="Bad request"),
+     *      @OA\Response(response=404, description="Resource Not Found")
+     * )
+     */
+
     public function login(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -96,6 +116,18 @@ class AuthController extends Controller
      * Get the authenticated User.
      *
      * @return \Illuminate\Http\JsonResponse
+     */
+    /**
+     * @OA\GET(
+     *     path="/api/user",
+     *     tags={"Authentication"},
+     *     summary="Authenticated User Profile",
+     *     description="User Profile",
+     *     @OA\Response(response=200, description="Authenticated User Profile" ),
+     *     @OA\Response(response=400, description="Bad request"),
+     *     @OA\Response(response=404, description="Resource Not Found"),
+     *     security={{"bearerAuth": {} }}
+     * )
      */
     public function userProfile()
     {
