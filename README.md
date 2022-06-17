@@ -37,7 +37,7 @@ Laravel 8 with JWT Authentication and Swagger for API development
 - Visit `localhost`
 
 > **Note:**
-- You can now use:
+- You can now use ```Postman```:
 
 - ```POST /api/register``` –> Create user 
 
