@@ -1,6 +1,7 @@
 Documents.txt
 src/.gitattributes
 src/.gitignore
+src/vendor
 src/README.md
 src/storage/app/.gitignore
 src/storage/app/public/.gitignore

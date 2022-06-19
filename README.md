@@ -24,6 +24,7 @@ Laravel 8 with JWT Authentication and Swagger for API development
     ```bash
     $ docker exec -it php_laravel_jwt_api sh
     $ composer update
+    $ php artisan key:generate
     $ php artisan jwt:secret
     $ php artisan l5-swagger:generate
     $ php artisan migrate
@@ -57,6 +58,3 @@ Laravel 8 with JWT Authentication and Swagger for API development
 
 - ```GET /api/user``` –> Get user info
 
-
-
-And remember, JWT requires you to provide the token as a header.
