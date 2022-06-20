@@ -10,6 +10,7 @@ Laravel 8 with JWT Authentication and Swagger for API development
 * [Laravel](https://github.com/laravel/framework) ^8.0
 * [jwt-auth](https://github.com/tymondesigns/jwt-auth) ^1.0.2
 * [Swagger](https://github.com/DarkaOnLine/L5-Swagger) 8.3.2
+* [Clockwork](https://github.com/itsgoingd/clockwork) 5.0.8
 ## Installation
 
 - Clone this repo or download it

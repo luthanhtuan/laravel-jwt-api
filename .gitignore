@@ -9,3 +9,5 @@ src/storage/framework/.gitignore
 src/storage/framework/cache/.gitignore
 src/storage/framework/sessions/.gitignore
 src/storage/logs/.gitignore
+src/storage/clockwork/.gitignore
+src/composer.lock
