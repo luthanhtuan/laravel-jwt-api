@@ -13,7 +13,11 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     zip \
-    unzip
+    unzip\
+    vim \
+    wget \
+    nodejs \
+    npm 
   
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- \ 
